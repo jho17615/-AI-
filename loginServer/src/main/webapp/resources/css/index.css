@@ -1,0 +1,330 @@
+html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+ 
+     }
+     img {
+         width: 100%;
+         height: auto;
+     }
+     .login {
+         height: 100%;
+         width: 100%;
+         background: rgba(0, 0, 0, 0.3); /* 전체 배경을 반투명 검은색으로 설정 */
+         position: relative;
+     }
+     .login_box {
+         width: 100%;
+         max-width: 1050px;
+         height: 100%;
+         max-height: 600px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         background: #fff;
+         border-radius: 10px;
+         box-shadow: 1px 4px 22px -8px #0004;
+         display: flex;
+         overflow: hidden;
+     }
+     .login_box .left {
+         width: 41%;
+         height: 100%;
+         padding: 25px 25px;
+     }
+     .login_box .right {
+         width: 59%;
+         height: 100%;
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.kmecnews.co.kr/news/photo/202111/23439_12913_563.jpg) no-repeat center center;
+         background-size: cover;
+     }
+     .left .top_link a {
+         color: #452A5A;
+         font-weight: 400;
+     }
+     .left .top_link {
+         height: 20px;
+     }
+     .left .contact {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         align-self: center;
+         height: 100%;
+         width: 73%;
+         margin: auto;
+         flex-direction: column;
+     }
+     .left h3 {
+         text-align: center;
+         margin-bottom: 40px;
+     }
+     .left input {
+         border: none;
+         margin: 15px 0px;
+         border-bottom: 1px solid #4f30677d;
+         padding: 7px 9px;
+         width: 100%;
+         background: transparent;
+         font-weight: 600;
+         font-size: 14px;
+     }
+     .left {
+         background: linear-gradient(-45deg, #dcd7e0, #fff);
+     }
+     .submit {
+         border: none;
+         padding: 15px 70px;
+         border-radius: 8px;
+         display: block;
+         margin: auto;
+         margin-top: 40px;
+         background: rgb(0, 0, 128);
+         color: #fff;
+         font-weight: bold;
+         -webkit-box-shadow: 0px 9px 15px -11px rgb(0, 0, 64);
+         -moz-box-shadow: 0px 9px 15px -11px rgb(0, 0, 0);
+         box-shadow: 0px 9px 15px -11px rgb(0, 0, 0);
+     }
+     .signup-btn {
+         margin-top: 20px;
+         background: rgb(0, 0, 128);
+     }
+     .right-text {
+         height: 100%;
+         position: relative;
+         transform: translate(0%, 45%);
+     }
+     .right-text h2 {
+         display: block;
+         width: 100%;
+         text-align: center;
+         font-size: 50px;
+         font-weight: 500;
+     }
+     .right-text h5 {
+         display: block;
+         width:100%;
+         text-align: center;
+         font-size: 35px; /* 글씨 크기 키움 */
+         font-weight: 700; /* 글씨 두께 키움 */
+         color: #ffffff; /* 글씨 색상 하얀색으로 설정 */
+         margin-top: -30px; /* 위쪽 여백 설정 */
+     }
+     .right-inductor {
+         position: absolute;
+         width: 70px;
+         height: 7px;
+         background: #fff0;
+         left: 50%;
+         bottom: 70px;
+         transform: translate(-50%, 0%);
+     }
+     .top_link img {
+         width: 28px;
+         padding-right: 7px;
+         margin-top: -3px;
+     }
+	 * {
+	           margin: 0;
+	           padding: 0;
+	           box-sizing: border-box;
+	           font-family: 'Poppins', sans-serif;
+	       }
+
+	       body {
+	           background: #ecf0f3;
+	           margin: 0;
+	           padding: 0;
+	           color: #31344b;
+	           display: flex;
+	           justify-content: center;
+	           align-items: center;
+	           height: 100vh;
+	       }
+
+	       /* Neumorphism Sidebar Styles */
+	       .side_bar {
+	           position: fixed;
+	           top: 0;
+	           left: -250px;
+	           height: 100%;
+	           width: 250px;
+	           background: #1e385a; /* 파란 어두운 배경색 */
+	           transition: all 0.3s ease;
+	       }
+
+	       .side_bar.active {
+	           left: 0;
+	       }
+
+	       .title {
+	           display: flex;
+	           justify-content: space-between;
+	           align-items: center;
+	           padding: 20px;
+	           color: #fff;
+	           border-bottom: 1px solid #444;
+	       }
+
+	       .title .logo {
+	           font-size: 1.5rem;
+	           font-weight: bold;
+	       }
+
+	       .title .cancel {
+	           font-size: 1.5rem;
+	           cursor: pointer;
+	       }
+
+	       ul {
+	           padding: 0;
+	           list-style-type: none;
+	       }
+
+	       ul li {
+	           padding: 15px;
+	           border-bottom: 1px solid #444;
+	           text-align: center;
+	       }
+
+	       ul li a {
+	           color: #fff;
+	           text-decoration: none;
+	       }
+
+	       .media_icons {
+	           position: absolute;
+	           bottom: 20px;
+	           width: 100%;
+	           display: flex;
+	           justify-content: center;
+	       }
+
+	       .media_icons a {
+	           color: #fff;
+	           font-size: 1.2rem;
+	           margin: 0 10px;
+	           text-decoration: none;
+	           transition: color 0.3s ease;
+	       }
+
+	       .media_icons a:hover {
+	           color: #45a049;
+	       }
+
+	       #check {
+	           display: none;
+	       }
+
+	       .button {
+	           background: none;
+	           border: none;
+	           cursor: pointer;
+	           outline: none;
+	       }
+
+	       .button:hover {
+	           color: #45a049;
+	       }
+
+	       .button.bars {
+	           font-size: 1.5rem;
+	           position: fixed;
+	           top: 20px;
+	           left: 20px;
+	       }
+
+	       .button.cancel {
+	           font-size: 1.5rem;
+	       }
+
+	       /* Login Form Styles */
+	       .login-container {
+	           background-color: #fff;
+	           padding: 20px;
+	           border-radius: 8px;
+	           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	           max-width: 300px;
+	           margin: auto;
+	           margin-left: 280px; /* 조정된 부분 */
+	       }
+
+	       .login-form input[type="text"],
+	       .login-form input[type="password"] {
+	           padding: 8px;
+	           margin-bottom: 10px;
+	           width: 100%;
+	           box-sizing: border-box; /* 내부 padding과 border 포함 */
+	           border: 1px solid #ccc;
+	           background-color: #fff;
+	           border-radius: 4px;
+	       }
+
+	       .login-form input[type="submit"] {
+	           padding: 10px 20px;
+	           background-color: #4CAF50;
+	           color: white;
+	           border: none;
+	           cursor: pointer;
+	           margin-top: 10px;
+	           border-radius: 4px;
+	           transition: background-color 0.3s ease;
+	       }
+
+	       .login-form input[type="submit"]:hover {
+	           background-color: #45a049;
+	       }
+
+	       /* Profile Card Styles */
+	       .container {
+	           display: flex;
+	           justify-content: center;
+	           align-items: center;
+	           height: 100vh;
+	           background-color: #f0f0f0;
+	       }
+
+	       .card {
+	           background-color: #fff;
+	           width: 300px;
+	           padding: 20px;
+	           border-radius: 8px;
+	           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	           margin: 20px;
+	           text-align: center;
+	       }
+
+	       .card .img img {
+	           width: 100%;
+	           border-radius: 50%;
+	           margin-bottom: 10px;
+	       }
+
+	       .card .top-text {
+	           margin-bottom: 15px;
+	       }
+
+	       .card .name {
+	           font-size: 1.5rem;
+	           font-weight: bold;
+	           color: #333;
+	       }
+
+	       .card .bottom-text {
+	           color: #666;
+	           font-size: 0.9rem;
+	       }
+
+	       .card .btn a {
+	           text-decoration: none;
+	           color: #45a049;
+	           font-weight: bold;
+	           transition: color 0.3s ease;
+	       }
+
+	       .card .btn a:hover {
+	           color: #3498db;
+	       }

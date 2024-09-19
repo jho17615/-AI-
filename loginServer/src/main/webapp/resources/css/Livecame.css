@@ -1,0 +1,88 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(192, 192, 192);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    max-width: 600px;
+    width: 100%; /* 추가된 속성: 반응형 레이아웃 */
+    margin: auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 강도 조정 */
+}
+
+/* 제목 스타일 */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* 제목 크기 설정 */
+    color: #007bff; /* 제목 색상 변경 */
+}
+
+/* 폼 스타일 */
+form {
+    margin-top: 20px;
+}
+
+/* 입력 필드 및 텍스트 영역 스타일 */
+input[type="text"], input[type="date"], textarea, select {
+    width: calc(100% - 24px); /* 너비 조정: padding을 포함한 전체 너비 조정 */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255); /* 배경색 추가 */
+}
+
+/* 텍스트 영역 스타일 */
+textarea {
+    height: 100px;
+    resize: vertical; /* 세로 방향으로만 크기 조정 가능 */
+}
+
+/* 버튼 컨테이너 스타일 */
+.button-container {
+    display: flex;
+    justify-content: center; /* 버튼 중앙 정렬 */
+    gap: 10px; /* 버튼 사이 간격 조정 */
+    margin-top: 20px;
+}
+
+/* 제출 버튼 스타일 */
+.button-container input[type="submit"] {
+    width: 150px; /* 버튼 너비 수정 */
+    height: 50px; /* 버튼 높이 수정 */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex; /* Flexbox 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    transition: background-color 0.3s; /* 배경색 전환 효과 추가 */
+}
+
+/* 제출 버튼 호버 스타일 */
+.button-container input[type="submit"]:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변경 */
+}
+
+/* 선택 박스 스타일 */
+select {
+    background-color: #fff; /* 선택 박스 배경색 설정 */
+}
